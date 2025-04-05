@@ -1,18 +1,30 @@
 :root {
   --bkgclr: #f3e5d8;
   --formheroclr: #ffffff;
-  --textclr: #722c48;
   --herotextclr: #722c48;
   --prepcontainer: #fff7fc;
   --alltextclr: hsl(30, 10%, 34%);
   --basictextclr: black;
 }
+
 .bold {
   font-weight: bold;
 }
+
+.font1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+}
+
+.font2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
 body {
   background-color: var(--bkgclr);
   color: var(--alltextclr);
+  box-shadow: 1px;
 }
 
 .container {
@@ -21,19 +33,19 @@ body {
   width: 75%;
   height: 100%;
   margin: 3em auto;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: var(--formheroclr);
-  padding: 20px 20px 20px 20px;
+  padding: 20px 30px 20px 30px;
   overflow: visible;
 }
 
 .headerimg {
-  width: 95%; /* Use a percentage to make the width responsive */
+  width: 97%; /* Use a percentage to make the width responsive */
   max-width: 600px; /* Limit the maximum width */
   height: auto;
   margin: 0.8em auto;
   margin-left: 15px;
-  border-radius: 7px;
+  border-radius: 20px;
 }
 
 h1 {
@@ -53,17 +65,29 @@ h1 span {
   font-size: 1em;
 }
 
-h2 {
+h2,
+h4 {
   padding-left: 20px;
-  color: var(--textclr);
+  color: var(--herotextclr);
   font-family: outfit, sans-serif;
   font-weight: 600;
+  font-size: 1.5em;
+}
+
+h3 {
+  padding-left: 25px;
+  color: var(--herotextclr);
+  font-family: young serif, serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin: 0;
+  padding-top: 20px;
 }
 
 li {
   padding-top: 10px;
   font-family: outfit, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--alltextclr);
 }
 
@@ -74,4 +98,67 @@ li {
   background-color: var(--prepcontainer);
   border-radius: 10px;
   padding: 3px;
+}
+
+.instructioncontainer {
+  border-top: 1px solid hsla(15, 4%, 18%, 0.315);
+  width: 90%;
+  height: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+body form section ol li {
+  font-family: outfit, sans-serif;
+  font-weight: 400;
+  color: var(--alltextclr);
+  font-size: 15px;
+}
+
+.custom-ul li::marker {
+  color: var(--herotextclr);
+  font-size: 1.2em;
+}
+.nutritiondescription {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.nutritioncontainer {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.nutritioncontainer p {
+  border-top: 1px solid hsla(15, 4%, 18%, 0.178);
+  padding: 10px 10px 10px 10px;
+}
+
+.unstyled {
+  border: none !important;
+}
+
+.nutritiontype {
+  float: left;
+  width: 100px;
+  max-width: 100px;
+  height: auto;
+  font-weight: 300;
+  color: var(--alltextclr);
+  margin-left: 20px;
+}
+
+.nutritionvalue {
+  display: flex;
+  flex-direction: column;
+  margin-left: 230px;
+  font-weight: 700;
+  color: var(--herotextclr);
+}
+
+.attribution {
+  font-size: 1.2em;
 }
