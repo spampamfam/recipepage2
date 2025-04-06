@@ -28,14 +28,14 @@ body {
 }
 
 .container {
-  max-width: 600px;
-  min-width: 300px;
+  max-width: 60vh;
+  min-width: 30vh;
   width: 75%;
   height: 100%;
   margin: 3em auto;
-  border-radius: 30px;
+  border-radius: 3vh;
   background-color: var(--formheroclr);
-  padding: 20px 30px 20px 30px;
+  padding: 2vh 3vh 2vh 3vh;
   overflow: visible;
 }
 
@@ -81,7 +81,7 @@ h3 {
   font-weight: 500;
   font-size: 1.5em;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 4vh;
 }
 
 li {
@@ -112,7 +112,7 @@ body form section ol li {
   font-family: outfit, sans-serif;
   font-weight: 400;
   color: var(--alltextclr);
-  font-size: 15px;
+  font-size: 1em;
 }
 
 .custom-ul li::marker {
@@ -122,8 +122,8 @@ body form section ol li {
 .nutritiondescription {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
-  font-size: 15px;
-  padding-left: 20px;
+  font-size: 1.1em;
+  padding-left: 4vh;
 }
 
 .nutritioncontainer {
@@ -143,18 +143,18 @@ body form section ol li {
 
 .nutritiontype {
   float: left;
-  width: 100px;
+  width: 100%px;
   max-width: 100px;
   height: auto;
   font-weight: 300;
   color: var(--alltextclr);
-  margin-left: 20px;
+  margin-left: 5vh;
 }
 
 .nutritionvalue {
   display: flex;
   flex-direction: column;
-  margin-left: 230px;
+  margin-left: 40vh;
   font-weight: 700;
   color: var(--herotextclr);
 }
